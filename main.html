@@ -11,11 +11,34 @@
 	<div class="label label-primary">hi</div>
 </div>
 <script type="text/javascript">
-head.load(["../money/static/js/dependencies/jquery-1.11.1.min.js"],
+head.load([
+	"../money/static/js/dependencies/jquery-1.11.1.min.js",
+	"../money/static/js/dependencies/underscore-min.js",
+	"../money/static/js/dependencies/backbone-min.js",
+	"../money/static/bootstrap/dist/js/bootstrap.min.js",
+	"../money/static/js/settings.js"
+],
 function(){
 	console.log($('.label-primary').text());
 }
 );
+</script>
+<script type="text/template" id="edit-course">
+	<h1>Edit Course</h1>
+	<div class="course-list">
+	</div>
+</script>
+<script type="text/template" id="edit-hole">
+	<div class="hole-details">
+		<div class="hole-number pull-left"><< holeNumber >></div>
+		<div class="hole-par pull-left">
+			<select name="par-selector" class="par-selector">
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</div>
+	</div>
 </script>
 </body>
 </html>

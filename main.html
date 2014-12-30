@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Money Golf</title>
+	<link rel="stylesheet" href="../money/static/bootstrap/dist/css/bootstrap.css" type="text/css" >
+	<script type="text/javascript" src="../money/static/js/dependencies/head.load.min.js"></script>
 </head>
 <body>
-	<div> hi </div>
-	<div>
-		here's a thing!
-		
-	</div>
+<div id="game-container">
+	<div class="label label-primary">hi</div>
+</div>
+<script type="text/javascript">
+head.load(["../money/static/js/dependencies/jquery-1.11.1.min.js"],
+function(){
+	console.log($('.label-primary').text());
+}
+);
+</script>
 </body>
 </html>
